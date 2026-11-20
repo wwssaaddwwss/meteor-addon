@@ -1,24 +1,23 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "wwss-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "wwss-addon",
+  "description": "6767",
   "authors": [
-    "seasnail"
+    "wwssaaddwwss"
   ],
   "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "sources": "https://https://github.com/wwssaaddwwss/meteor-addon"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/wwss/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "org.wwss.addon.AddonTemplate"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25",

@@ -1,6 +1,6 @@
-package com.example.addon.modules;
+package org.wwss.addon.modules;
 
-import com.example.addon.AddonTemplate;
+import org.wwss.addon.AddonTemplate;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
 import meteordevelopment.meteorclient.renderer.ShapeMode;
 import meteordevelopment.meteorclient.settings.ColorSetting;
@@ -11,8 +11,8 @@ import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.phys.AABB;
+//import net.minecraft.core.BlockPos;
+//import net.minecraft.world.phys.AABB;
 
 public class ModuleExample extends Module {
     private final SettingGroup sgGeneral = this.settings.getDefaultGroup();
@@ -50,17 +50,17 @@ public class ModuleExample extends Module {
      * Example event handling method.
      * Requires {@link AddonTemplate#getPackage()} to be setup correctly, otherwise the game will crash whenever the module is enabled.
      */
-    @EventHandler
-    private void onRender3d(Render3DEvent event) {
-        // Create & expand the marker object
-        AABB marker = new AABB(BlockPos.ZERO);
-        marker = marker.expandTowards(
-            scale.get() * marker.getXsize(),
-            scale.get() * marker.getYsize(),
-            scale.get() * marker.getZsize()
-        );
-
-        // Render the marker based on the color setting
-        event.renderer.box(marker, color.get(), color.get(), ShapeMode.Both, 0);
-    }
+//    @EventHandler
+//    private void onRender3d(Render3DEvent event) {
+//        // Create & expand the marker object
+//        AABB marker = new AABB(BlockPos.ZERO);
+//        marker = marker.expandTowards(
+//            scale.get() * marker.getXsize(),
+//            scale.get() * marker.getYsize(),
+//            scale.get() * marker.getZsize()
+//        );
+//
+//        // Render the marker based on the color setting
+//        event.renderer.box(marker, color.get(), color.get(), ShapeMode.Both, 0);
+//    }
 }

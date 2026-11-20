@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    // Fabric 與反混淆 Mappings
+    // Fabric & Mappings
     minecraft(libs.minecraft)
     mappings("net.fabricmc:yarn:${libs.versions.yarn.get()}:v2")
     modImplementation(libs.fabric.loader)
