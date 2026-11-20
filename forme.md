@@ -6,4 +6,4 @@ project name
 
 
 #note
-[change entrance].\src\resource\fabric.mod.json
+[change entrance]./src/resource/fabric.mod.json
