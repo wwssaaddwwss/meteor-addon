@@ -1,9 +1,9 @@
-#FINISHED
+# FINISHED
 idk
-#NEXTTODO
-elytrafly
+
+# NEXTTODO
+elytrafly  
 project name
 
-
-#note
-[change entrance]./src/resource/fabric.mod.json
+# note
+[change entrance](./src/resource/fabric.mod.json)
