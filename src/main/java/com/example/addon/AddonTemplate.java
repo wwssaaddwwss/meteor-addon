@@ -24,9 +24,9 @@ public class AddonTemplate extends MeteorAddon {
 
         // Modules
         Modules.get().add(new ModuleExample());
-
-        // Commands
-        Commands.add(new CommandExample());
+//
+//        // Commands
+//        Commands.add(new CommandExample());
 
         // HUD
         Hud.get().register(HudExample.INFO);

@@ -23,12 +23,13 @@ repositories {
 }
 
 dependencies {
-    // Fabric
+    // Fabric 與反混淆 Mappings
     minecraft(libs.minecraft)
-    implementation(libs.fabric.loader)
+    mappings("net.fabricmc:yarn:${libs.versions.yarn.get()}:v2")
+    modImplementation(libs.fabric.loader)
 
     // Meteor
-    implementation(libs.meteor.client)
+    modImplementation(libs.meteor.client)
 }
 
 java {
