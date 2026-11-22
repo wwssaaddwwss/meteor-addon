@@ -8,6 +8,7 @@ import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 import org.slf4j.Logger;
 import org.wwss.addon.modules.ElytraFly;
+import org.wwss.addon.modules.NoCrash;
 
 public class AddonTemplate extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
@@ -21,6 +22,7 @@ public class AddonTemplate extends MeteorAddon {
 //        // Modules
 //        Modules.get().add(new ModuleExample());
         Modules.get().add(new ElytraFly());
+        Modules.get().add(new NoCrash());
 //
 //        // Commands
 //        Commands.add(new CommandExample());
