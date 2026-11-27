@@ -9,5 +9,4 @@ public class ElytraFly extends Module {
     public ElytraFly(){
         super(Addon.CATEGORY,"elytrafly","Module to control elytra.");
     }
-
 }
