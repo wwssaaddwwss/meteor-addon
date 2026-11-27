@@ -4,6 +4,7 @@ package org.wwss.addon.modules;
 import meteordevelopment.meteorclient.settings.DoubleSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
+import meteordevelopment.meteorclient.settings.BoolSetting;
 import net.minecraft.util.math.BlockPos;
 import org.wwss.addon.Addon;
 import org.wwss.addon.AddonTemplate;
@@ -44,14 +45,13 @@ public class NoCrash extends Module {
         .build());
 
     public NoCrash() {
-        super(AddonTemplate.CATEGORY, "NoCrash", "a module to stop moving whenelytra flying.");
+        super(Addon.CATEGORY, "NoCrash", "a module to stop moving whenelytra flying.");
     }
 
     @Override
     public void onActivate() {
-        double dis = distance.get();
-        if(hasBlockAhead(dis)){
-
+        double dis = distance.get();if (mc.player.isGliding() && hasBlockAhead(distance.get())) {
+            mc.player.stopGliding();
         }
     }
 

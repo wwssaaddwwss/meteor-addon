@@ -10,8 +10,7 @@ import org.wwss.addon.modules.ElytraFly;
 
 public class Addon extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
-    public static final HudGroup HUD_GROUP = new HudGroup("Example");
+    public static final Category CATEGORY = new Category("67");
 
     @Override
     public void onInitialize() {

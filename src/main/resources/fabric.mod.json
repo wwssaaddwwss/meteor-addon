@@ -14,7 +14,8 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "org.wwss.addon.AddonTemplate"
+      "org.wwss.addon.AddonTemplate",
+      "org.wwss.addon.Addon"
     ]
   },
   "mixins": [
